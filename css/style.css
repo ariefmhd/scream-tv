@@ -150,10 +150,6 @@ header {
 
 .banner .content {
   position: relative;
-}
-
-.banner .content {
-  position: relative;
   display: inline-block;
   margin-right: 10px;
 
@@ -239,54 +235,6 @@ header {
   box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.7);
 }
 
-.trailer {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10000;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(10px);
-  visibility: hidden;
-  opacity: 0;
-}
-
-.trailer.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.trailer video {
-  max-width: 900px;
-  outline: none;
-}
-
-.trailer .close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  cursor: pointer;
-  filter: invert(1);
-  max-width: 32px;
-}
-
-.navigation-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  margin-right: 20px;
-}
-
-.navigation-toggle span {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  margin: 3px 0;
-}
 @media (max-width: 991px) {
   header {
     padding: 20px 50px;
@@ -297,11 +245,11 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
-    flex-direction: row; /* Mengubah arah tata letak menjadi menyamping */
-    align-items: center; /* Menyatukan elemen navigasi secara vertikal */
+    flex-direction: row;
+    align-items: center;
   }
   .navigation a {
-    margin: 5px; /* Memberi jarak antara tautan navigasi */
+    margin: 5px;
   }
   .banner {
     padding: 100px 50px;
@@ -314,9 +262,6 @@ header {
     margin-left: 20px;
     margin-right: 10px;
     max-width: 30px;
-  }
-  .trailer video {
-    max-width: 90%;
   }
 }
 
